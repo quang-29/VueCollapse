@@ -204,9 +204,6 @@ const courses = ref([
               <div class="course-exercise-completion">
                 <p>{{ course.exerciseCompletionRate }} %</p>
               </div>
-              <!-- <span class="icon-ele">
-                {{ isActive ? 'Expanded' : 'Collapsed' }}
-              </span> -->
             </div>
           </template>
           <div v-for="lesson in course.lessons" :key="lesson.lessonTitle" class="lesson-item">

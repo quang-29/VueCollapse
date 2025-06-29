@@ -1,15 +1,16 @@
+<script setup>
+import { ref } from 'vue'
+import LessonItem from '@/components/LessonItem.vue'
+const data = ref({
+  lessonTitle: 'React là gì?',
+  duration: 15,
+  status: 'completed',
+  type: 'lesson',
+})
+</script>
+
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
+  <LessonItem :lesson="data" />
 </template>
 
-<style>
-@media (min-width: 1024px) {
-  .about {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-  }
-}
-</style>
+<style></style>

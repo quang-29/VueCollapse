@@ -5,7 +5,12 @@ import Course from './views/Course.vue'
 </script>
 
 <template>
-  <Course />
+  <div>
+    <RouterLink to="/">Home</RouterLink>
+    <RouterLink to="/about">About</RouterLink>
+    <RouterLink to="/profile">Profile</RouterLink>
+  </div>
+  <router-view></router-view>
 </template>
 
 <style scoped>
